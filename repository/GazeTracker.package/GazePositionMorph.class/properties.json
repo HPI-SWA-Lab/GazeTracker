@@ -9,8 +9,8 @@
 		"lastTarget",
 		"newTarget",
 		"lastTargetChangeTime" ],
-	"name" : "CrossMorph",
+	"name" : "GazePositionMorph",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "Object",
 	"type" : "normal" }

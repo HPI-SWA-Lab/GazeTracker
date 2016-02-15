@@ -5,6 +5,5 @@ parseInput: aString
 	integers size = 2
 		ifTrue: [
 			position := (integers first) @ (integers second).
-			"position := (640 - position x)@(position y)."
 			^position ]
 		ifFalse: [ ^0@0 ].

@@ -1,11 +1,8 @@
 as yet unclassified
-morphAtCross
+morphAtGaze: position
 	| morph filteredMorphs |
-	filteredMorphs := ((ActiveWorld morphsAt: eyePostionMorph center)
-		reject: [:m |
-			m = ActiveWorld or: [
-				m = eyePostionMorph or: [
-					m owner = eyePostionMorph]]]).
+	filteredMorphs := ((ActiveWorld morphsAt: position)
+		reject: [:m | m = ActiveWorld]).
 	
 	self class eyeFocusViaHandler ifTrue: [
 		morph := filteredMorphs
