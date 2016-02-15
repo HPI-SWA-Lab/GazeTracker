@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"endGame:" : "DS 1/20/2016 15:31",
+		"id" : "DS 1/20/2016 15:53",
+		"id:" : "DS 1/20/2016 15:54",
+		"initialize" : "DS 12/2/2015 17:57",
+		"onClick" : "DS 1/20/2016 15:54",
+		"spawnNextInputWindow" : "DS 1/20/2016 15:55",
+		"spawnNextInputWindowAfterCorrectAnswer" : "DS 1/13/2016 17:45",
+		"spawnNextInputWindowAfterWrongAnswer" : "DS 1/13/2016 17:46" } }

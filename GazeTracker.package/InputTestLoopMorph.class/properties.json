@@ -1,0 +1,18 @@
+{
+	"category" : "GazeTracker-Evaluation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"process",
+		"windowCount",
+		"correctAnswers",
+		"wrongAnswers",
+		"id" ],
+	"name" : "InputTestLoopMorph",
+	"pools" : [
+		 ],
+	"super" : "SimpleButtonMorph",
+	"type" : "normal" }

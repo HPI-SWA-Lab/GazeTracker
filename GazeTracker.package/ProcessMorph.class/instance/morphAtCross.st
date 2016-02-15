@@ -1,0 +1,30 @@
+as yet unclassified
+morphAtCross
+	| morph filteredMorphs |
+	filteredMorphs := ((ActiveWorld morphsAt: eyePostionMorph center)
+		reject: [:m |
+			m = ActiveWorld or: [
+				m = eyePostionMorph or: [
+					m owner = eyePostionMorph]]]).
+	
+	self class eyeFocusViaHandler ifTrue: [
+		morph := filteredMorphs
+			detect: [:m |
+				m hasProperty: #eyeFocusHandler ]
+			ifFound: [:m | m valueOfProperty: #eyeFocusHandler ifPresentDo: [ :handler |
+					handler value ]]
+			ifNone: []].	
+	
+	morph ifNil: [
+		self class keyboardFocusOnEyeEnter ifTrue: [
+			morph := filteredMorphs
+				detect: [:m |
+					m wantsKeyboardFocus or: [
+						[m handlesKeyboard: self createKeyboardEvent ]
+							ifError: [false] ] or: [
+						m isSystemWindow ]]
+				ifFound: [:m | m isSystemWindow
+					ifTrue: []
+					ifFalse: [m]]
+				ifNone: []]].
+	^ morph

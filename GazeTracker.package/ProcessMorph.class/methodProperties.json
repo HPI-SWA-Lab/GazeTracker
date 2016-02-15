@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"bringFocusedWindowToFront" : "DS 2/15/2016 12:03",
+		"bringFocusedWindowToFront:" : "DS 2/3/2016 17:08",
+		"eyeFocusViaHandler" : "DS 2/15/2016 12:03",
+		"eyeFocusViaHandler:" : "DS 2/3/2016 16:45",
+		"keepFocusOnCmdKeyPref" : "DS 2/15/2016 12:03",
+		"keepFocusOnCmdKeyPref:" : "DS 2/3/2016 19:05",
+		"keyboardFocusOnEyeEnter" : "DS 2/15/2016 11:51",
+		"keyboardFocusOnEyeEnter:" : "DS 2/3/2016 16:33" },
+	"instance" : {
+		"calibrateBottomRight" : "DS 11/18/2015 17:58",
+		"calibrateTopLeft" : "DS 11/18/2015 17:58",
+		"createKeyboardEvent" : "DS 1/27/2016 17:26",
+		"endlessProcessBlock" : "DS 11/18/2015 15:16",
+		"initialize" : "DS 12/9/2015 19:07",
+		"initializeCalibrationMorphs" : "DS 11/18/2015 17:55",
+		"initializePathMorph" : "DS 12/9/2015 19:06",
+		"morphAtCross" : "DS 2/3/2016 17:26",
+		"onClick" : "DS 12/9/2015 19:07",
+		"parseInput:" : "DS 1/13/2016 16:23",
+		"processBlock" : "DS 2/3/2016 17:13",
+		"processEyeInput" : "DS 2/3/2016 18:02",
+		"readLineFromStdIn" : "DS 1/20/2016 17:57",
+		"scaleEyeMorphPosition:" : "DS 11/18/2015 18:05" } }

@@ -1,0 +1,28 @@
+{
+	"category" : "GazeTracker-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"BringFocusedWindowToFrontPref",
+		"EyeFocusViaHandlerPref",
+		"KeepFocusOnCmdKeyPref",
+		"KeyboardFocusOnEyeEnterPref" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"process",
+		"eyePostionMorph",
+		"topLeftMorph",
+		"bottomRightMorph",
+		"bottomRight",
+		"topLeft",
+		"bottomRightPosition",
+		"topLeftPosition",
+		"cameraPosition",
+		"oldPositions",
+		"smoothingPositions",
+		"pathMorph" ],
+	"name" : "ProcessMorph",
+	"pools" : [
+		 ],
+	"super" : "SimpleButtonMorph",
+	"type" : "normal" }
