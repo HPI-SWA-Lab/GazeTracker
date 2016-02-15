@@ -50,8 +50,9 @@ Metacello new
 
 ## Making changes to the exchange format between Tobii EyeX and Squeak
 If you want to make changes to the way this project writes gaze coordinates to the stout, follow these instructions.
-* Download and install the Tobii EyeX SDK for C and C++: http://developer.tobii.com/eyex-sdk/c-cplusplus/
-TODO: Put in subfolder of this repo
+* Download and install the Tobii EyeX SDK for C and C++: http://developer.tobii.com/eyex-sdk/c-cplusplus/ (TODO: Put in subfolder of this repo)
+
+TODO: Add compiling instructions and relevant files
 
 ## Linklist
 * Tobii
