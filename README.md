@@ -5,7 +5,7 @@ Gaze tracking is typically used to gather information on a users point of view a
 
 The project was started by [Daniel Stolpe](https://github.com/numberpi) and [Astrid Thomschke](github.com/athomschke) during the Programming Languages, Concepts, Tools and Environments (PLCTE) in the winter semester of 2015/2016, supervised by [Marcel Taeumel](https://github.com/marceltaeumel).
 
-## Setup instructions
+## Setting up GazeTracker
 In order to have gaze coordinates information available in a Squeak image, we write information from a Tobii EyeX gaze tracker to stdout. This output is then piped into a process running a Squeak image.
 
 The setup requires on the hardware side
