@@ -1,1 +1,1 @@
-Tobii2SqueakAdapter.exe | [PathToYourSqueakExecutable] [PathToYourSqueakImage]
+Tobii2SqueakAdapter.exe | [PathToYourSqueakConsoleExecutable] [PathToYourSqueakImage]
