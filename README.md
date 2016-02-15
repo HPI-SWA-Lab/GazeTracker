@@ -31,11 +31,11 @@ We provide an adapter as Windows executable that allows writing screen coordinat
 * If you don't have a Squeak environment, download a Squeak executable and image from http://squeak.org/downloads/
 * In https://github.com/HPI-SWA-Lab/GazeTracker/tobii-adapter/ , copy Tobii.EyeX.Client-template-x32.dll or Tobii.EyeX.Client-template-x64.dll (depending on your system) and rename it to Tobii.EyeX.Client.dll. The sources for these libraries can be found in the [TobiiEyeX SDK for C and C++](http://developer.tobii.com/eyex-sdk/c-cplusplus/)
 * Start your squeak image from command line using the gazetracking information
+ * The pre-compiled executable can be found under /GazeCorrdinatesToCommandLine/GazeCorrdinatesToCommandLine.exe (TODO: correct name and location!)
+ * An example batch file can be found at [GazeTracker repository]\tobii-adapter\startSqueakWithTobii-template.bat
 ``` shell
 [PathToYourTobii2SqueakAdapter] | [PathToYourSqueakExecutable] [PathToYourSqueakImage]
 ```
- * The pre-compiled executable can be found under /GazeCorrdinatesToCommandLine/GazeCorrdinatesToCommandLine.exe (TODO: correct name and location!)
- * An example batch file can be found at [GazeTracker repository]\tobii-adapter\startSqueakWithTobii-template.bat
 
 ### Use gaze tracking information in Squeak
 * In a Squeak workspace, run
