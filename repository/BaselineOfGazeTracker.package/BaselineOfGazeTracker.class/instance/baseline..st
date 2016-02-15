@@ -5,15 +5,15 @@ baseline: spec
 		for: #common
 		do: [
 			spec
-				package: 'GazeTracker-Core' with: [
+				package: 'GazeTracker' with: [
 					spec
 						repository: 'github://HPI-SWA-Lab/GazeTracker:master/repository'];	
 									
-				package: 'GazeTracker-Evaluation' with: [
+				package: 'GazeTrackerEvaluation' with: [
 					spec
 						repository: 'github://HPI-SWA-Lab/GazeTracker:master/repository';
 						requires: #('GazeTracker-Core' )].
 					
 			spec
-				group: 'default' with: #('GazeTracker-Core' );
-				group: 'evaluation' with: #('GazeTracker-Core' 'GazeTracker-Evaluation' )]
+				group: 'default' with: #('GazeTracker' );
+				group: 'evaluation' with: #('GazeTracker' 'GazeTrackerEvaluation' )]
