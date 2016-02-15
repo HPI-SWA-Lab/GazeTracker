@@ -6,7 +6,7 @@ baseline: spec
         do: [ 
             spec
                 package: 'GazeTracker-Core';
-                package: 'GazeTracker-Evaluation' with: [ spec requires: #('default') ].
+                package: 'GazeTracker-Evaluation'.
             spec
                 group: 'default' with: #('GazeTracker-Core');
                 group: 'evaluation' with: #('GazeTracker-Core' 'GazeTracker-Evaluation')]
