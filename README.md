@@ -1,9 +1,11 @@
 # GazeTracker
-Support for gaze/eye tracking in Squeak
+_Support for gaze/eye tracking in Squeak_
 
 Gaze tracking is typically used to gather information on a users point of view and analyze it. This project utilized gaze tracking in order to try and increase a programmers performance in the Squeak programming environment.
 
 The project was started by [Daniel Stolpe](https://github.com/numberpi) and [Astrid Thomschke](github.com/athomschke) during the Programming Languages, Concepts, Tools and Environments (PLCTE) in the winter semester of 2015/2016, supervised by [Marcel Taeumel](https://github.com/marceltaeumel).
+
+View the Squeak Gaze Tracker screencast at https://youtu.be/SNm0B0PTYQI
 
 ## Setting up GazeTracker
 In order to have gaze coordinates information available in a Squeak image, we write information from a Tobii EyeX gaze tracker to stdout. This output is then piped into a process running a Squeak image.
@@ -29,9 +31,8 @@ Tobii is set up at this point. You can try the gaze tracker in your Windows envi
 We provide an adapter as Windows executable that allows writing screen coordinates from TobiiEyeX to stdout. If you want to make changes to this output format, you'll find instructions [later in this document](https://github.com/HPI-SWA-Lab/GazeTracker/blob/master/README.md#making-changes-to-the-exchange-format-between-tobii-eyex-and-squeak).
 
 * If you don't have a Squeak environment, download a Squeak executable and image from http://squeak.org/downloads/
-* In https://github.com/HPI-SWA-Lab/GazeTracker/tobii-adapter/ , copy Tobii.EyeX.Client-template-x32.dll or Tobii.EyeX.Client-template-x64.dll (depending on your system) and rename it to Tobii.EyeX.Client.dll. The sources for these libraries can be found in the [TobiiEyeX SDK for C and C++](http://developer.tobii.com/eyex-sdk/c-cplusplus/)
 * Start your squeak image from command line with the adapter
- * The pre-compiled executable can be found under [[GazeTracker repository]\tobii-adapter\Tobii2SqueakAdapter.exe](https://github.com/HPI-SWA-Lab/GazeTracker/blob/master/tobii-adapter/Tobii2SqueakAdapter.exe)
+ * The pre-compiled executable can be found under [[GazeTracker repository]\tobii-adapter\Tobii2SqueakAdapter.exe](https://github.com/HPI-SWA-Lab/GazeTracker/blob/master/tobii-adapter/Tobii2SqueakAdapter.exe). If you move it somewhere else, make sure to also move the Tobii.EyeX.Client.dll to the same location.
  * An example batch file can be found at [[GazeTracker repository]\tobii-adapter\startSqueakWithTobii-template.bat](https://github.com/HPI-SWA-Lab/GazeTracker/tree/master/tobii-adapter/startSqueakWithTobii-template.bat)
  * Use following shell command (according to your environment)
 ``` shell
