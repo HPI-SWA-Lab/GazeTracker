@@ -31,7 +31,7 @@ We provide an adapter as Windows executable that allows writing screen coordinat
 * If you don't have a Squeak environment, download a Squeak executable and image from http://squeak.org/downloads/
 * In https://github.com/HPI-SWA-Lab/GazeTracker/tobii-adapter/ , copy Tobii.EyeX.Client-template-x32.dll or Tobii.EyeX.Client-template-x64.dll (depending on your system) and rename it to Tobii.EyeX.Client.dll. The sources for these libraries can be found in the [TobiiEyeX SDK for C and C++](http://developer.tobii.com/eyex-sdk/c-cplusplus/)
 * Start your squeak image from command line with the adapter
- * The pre-compiled executable can be found under [GazeTracker repository]\tobii-adapter\Tobii2SqueakAdapter.exe
+ * The pre-compiled executable can be found under [[GazeTracker repository]\tobii-adapter\Tobii2SqueakAdapter.exe](https://github.com/HPI-SWA-Lab/GazeTracker/blob/master/tobii-adapter/Tobii2SqueakAdapter.exe)
  * An example batch file can be found at [[GazeTracker repository]\tobii-adapter\startSqueakWithTobii-template.bat](https://github.com/HPI-SWA-Lab/GazeTracker/tree/master/tobii-adapter/startSqueakWithTobii-template.bat)
  * Use following shell command (according to your environment)
 ``` shell
