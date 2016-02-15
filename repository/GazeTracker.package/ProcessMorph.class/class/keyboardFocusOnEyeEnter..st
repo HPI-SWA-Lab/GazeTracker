@@ -1,4 +1,4 @@
-as yet unclassified
+preferences
 keyboardFocusOnEyeEnter: aBoolean
 
 	KeyboardFocusOnEyeEnterPref := aBoolean.

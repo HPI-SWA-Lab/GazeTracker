@@ -1,4 +1,4 @@
-as yet unclassified
+preferences
 bringFocusedWindowToFront
 	<preference: 'Bring focused windows to front'
 		category: 'EyeTracking'

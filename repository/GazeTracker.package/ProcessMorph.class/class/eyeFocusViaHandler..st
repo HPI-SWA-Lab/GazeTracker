@@ -1,4 +1,4 @@
-as yet unclassified
+preferences
 eyeFocusViaHandler: aBoolean
 
 	EyeFocusViaHandlerPref := aBoolean.

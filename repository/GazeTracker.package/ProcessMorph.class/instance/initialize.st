@@ -6,6 +6,6 @@ initialize
 	eyePostionMorph := CrossMorph new openInWorld.
 	oldPositions := OrderedCollection new.
 	smoothingPositions := OrderedCollection new.
-	self label: 'Start/stop process'.
+	self label: 'Start/stop GazeTracker'.
 	"self initializeCalibrationMorphs."
 "	self initializePathMorph."

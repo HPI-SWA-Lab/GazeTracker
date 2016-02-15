@@ -1,4 +1,4 @@
-as yet unclassified
+preferences
 bringFocusedWindowToFront: aBoolean
 
 	BringFocusedWindowToFrontPref := aBoolean.

@@ -1,4 +1,4 @@
-as yet unclassified
+preferences
 keyboardFocusOnEyeEnter
 	<preference: 'Force focus for keyboard-focus-handling morphs'
 		category: 'EyeTracking'

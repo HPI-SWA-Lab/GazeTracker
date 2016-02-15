@@ -1,4 +1,4 @@
-as yet unclassified
+preferences
 keepFocusOnCmdKeyPref
 	<preference: 'Keep focus if command-key pressed'
 		category: 'EyeTracking'

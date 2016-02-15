@@ -1,4 +1,4 @@
-as yet unclassified
+preferences
 eyeFocusViaHandler
 	<preference: 'Eye focus if morph has eye-handler'
 		category: 'EyeTracking'
