@@ -25,8 +25,14 @@ On the software side the setup requires
 
 Tobii is set up at this point. You can try the gaze tracker in your Windows environment.
 
-### Prepare Squeak image
+### Start Squeak with gaze tracking information
+We provide a Windows executable that allows writing screen coordinates from TobiiEyeX to stdout. If you want to make changes to this output format, have a look at section "Changing the exchange format between Tobii EyeX and Squeak"
+
 * If you don't have one, download a Squeak image from http://squeak.org/downloads/
+* TODO: correct command! Start your squeak image with [GazeCorrdinatesToCommandLineExecutable.exe] >> [YourSqueakImage.exe]
+ * TODO: naming coorrect! The pre-compiled executable can be found under /GazeCorrdinatesToCommandLine/GazeCorrdinatesToCommandLine.exe
+
+### Use gaze tracking information in Squeak
 * In a Squeak workspace, run
 ```smalltalk
 Metacello new
@@ -34,14 +40,8 @@ Metacello new
   repository: 'github://HPI-SWA-LAB/GazeTracker/repository';
   load.
 ```
-* TODO: in between steps
+* Left-click into the world and choose "Start gaze tracking".
 * Save the Image and close it.
-
-### Start gaze tracking in squeak
-We provide a Windows executable that allows writing screen coordinates from TobiiEyeX to stdout. If you want to make changes to this output format, have a look at section "Changing the exchange format between Tobii EyeX and Squeak"
-TODO: naming coorrect! The pre-compiled executable can be found under /GazeCorrdinatesToCommandLine/GazeCorrdinatesToCommandLine.exe
-
-TODO: correct command! Start your squeak image with [GazeCorrdinatesToCommandLineExecutable.exe] >> [YourSqueakImage.exe]
 
 ## Making changes to the exchange format between Tobii EyeX and Squeak
 If you want to make changes to the way this project writes gaze coordinates to the stout, follow these instructions.
