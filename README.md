@@ -26,15 +26,16 @@ On the software side the setup requires
 Tobii is set up at this point. You can try the gaze tracker in your Windows environment.
 
 ### Start Squeak with gaze tracking information
-We provide a Windows executable that allows writing screen coordinates from TobiiEyeX to stdout. If you want to make changes to this output format, you'll find instructions [later in this document](https://github.com/HPI-SWA-Lab/GazeTracker/blob/master/README.md#making-changes-to-the-exchange-format-between-tobii-eyex-and-squeak).
+We provide an adapter as Windows executable that allows writing screen coordinates from TobiiEyeX to stdout. If you want to make changes to this output format, you'll find instructions [later in this document](https://github.com/HPI-SWA-Lab/GazeTracker/blob/master/README.md#making-changes-to-the-exchange-format-between-tobii-eyex-and-squeak).
 
-* If you don't have one, download a Squeak image from http://squeak.org/downloads/
+* If you don't have a Squeak environment, download a Squeak executable and image from http://squeak.org/downloads/
+* In https://github.com/HPI-SWA-Lab/GazeTracker/tobii-adapter/ , copy Tobii.EyeX.Client-template-x32.dll or Tobii.EyeX.Client-template-x64.dll (depending on your system) and rename it to Tobii.EyeX.Client.dll. The sources for these libraries can be found in the [TobiiEyeX SDK for C and C++](http://developer.tobii.com/eyex-sdk/c-cplusplus/)
 * Start your squeak image from command line using the gazetracking information
  * The pre-compiled executable can be found under /GazeCorrdinatesToCommandLine/GazeCorrdinatesToCommandLine.exe (TODO: correct name and location!)
+ * An example batch file can be found at [GazeTracker repository]\tobii-adapter\startSqueakWithTobii-template.bat
 
-TODO: correct command!
 ``` shell
-[GazeCorrdinatesToCommandLineExecutable.exe] >> [YourSqueakImage.exe]
+Tobii2SqueakAdapter.exe | [path to Squeak execuatble]\SqueakConsole.exe [path to Squeak image]\[Squeak Image Name].exe 
 ```
 
 ### Use gaze tracking information in Squeak
@@ -55,11 +56,13 @@ If you want to make changes to the way this project writes gaze coordinates to t
 TODO: Add compiling instructions and relevant files
 
 ## Linklist
+* GazeTracking for Squeak
+  * Github repository of this projects work: https://github.com/HPI-SWA-Lab/GazeTracker/
+  * Required Squeak package: [GazeTracker repository]\repository
+  * Tobii adapter: [GazeTracker repository]\tobii-adapter
+  * Tobii EyeX SDK changes: [GazeTracker repository]\tobii-adapter-source
 * Tobii
   * TobiiEyeX Drivers: http://developer.tobii.com/eyex-setup/
   * TobiiEyeX SDK for C and C++: http://developer.tobii.com/eyex-sdk/c-cplusplus/
 * Squeak
   * Squeak images: http://squeak.org/downloads/
-* GazeTracking for Squeak
-  * Github repository of this projects work: https://github.com/HPI-SWA-Lab/GazeTracker/
-  
