@@ -29,8 +29,13 @@ Tobii is set up at this point. You can try the gaze tracker in your Windows envi
 We provide a Windows executable that allows writing screen coordinates from TobiiEyeX to stdout. If you want to make changes to this output format, you'll find instructions [later in this document](https://github.com/HPI-SWA-Lab/GazeTracker/blob/master/README.md#making-changes-to-the-exchange-format-between-tobii-eyex-and-squeak).
 
 * If you don't have one, download a Squeak image from http://squeak.org/downloads/
-* TODO: correct command! Start your squeak image with [GazeCorrdinatesToCommandLineExecutable.exe] >> [YourSqueakImage.exe]
- * TODO: naming coorrect! The pre-compiled executable can be found under /GazeCorrdinatesToCommandLine/GazeCorrdinatesToCommandLine.exe
+* Start your squeak image from command line using the gazetracking information
+ * The pre-compiled executable can be found under /GazeCorrdinatesToCommandLine/GazeCorrdinatesToCommandLine.exe (TODO: correct name and location!)
+
+TODO: correct command!
+``` shell
+[GazeCorrdinatesToCommandLineExecutable.exe] >> [YourSqueakImage.exe]
+```
 
 ### Use gaze tracking information in Squeak
 * In a Squeak workspace, run
