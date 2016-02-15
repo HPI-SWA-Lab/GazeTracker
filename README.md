@@ -17,7 +17,7 @@ On the software side the setup requires
 * The contents of [this repository](https://github.com/HPI-SWA-Lab/GazeTracker/)
 * A [Squeak image](http://squeak.org/downloads/)
 
-### Set up TobiiEyex
+### Set up Tobii EyeX
 * Install the Tobii EyeX below your PC or Laptop Screen.
 * Plug in the Tobii EyeX. It will guide you through the setup, which includes the following
   * Download the software bundle at http://developer.tobii.com/eyex-setup/ and install it
