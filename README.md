@@ -1,5 +1,5 @@
 # GazeTracker
-Support for gaze/eye tracking in Squeak
+_Support for gaze/eye tracking in Squeak_
 
 Gaze tracking is typically used to gather information on a users point of view and analyze it. This project utilized gaze tracking in order to try and increase a programmers performance in the Squeak programming environment.
 
