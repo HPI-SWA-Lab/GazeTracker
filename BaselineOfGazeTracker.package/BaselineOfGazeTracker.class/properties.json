@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfGazeTracker",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfGazeTracker",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
