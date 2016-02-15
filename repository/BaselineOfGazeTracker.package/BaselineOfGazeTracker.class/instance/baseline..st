@@ -12,7 +12,7 @@ baseline: spec
 				package: 'GazeTrackerEvaluation' with: [
 					spec
 						repository: 'github://HPI-SWA-Lab/GazeTracker:master/repository';
-						requires: #('GazeTracker-Core' )].
+						requires: #('GazeTracker' )].
 					
 			spec
 				group: 'default' with: #('GazeTracker' );
