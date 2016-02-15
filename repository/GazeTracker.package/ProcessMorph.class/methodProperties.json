@@ -1,13 +1,13 @@
 {
 	"class" : {
-		"bringFocusedWindowToFront" : "DS 2/15/2016 12:03",
+		"bringFocusedWindowToFront" : "DS 2/15/2016 15:01",
 		"bringFocusedWindowToFront:" : "DS 2/3/2016 17:08",
-		"eyeFocusViaHandler" : "DS 2/15/2016 12:03",
+		"eyeFocusViaHandler" : "DS 2/15/2016 15:06",
 		"eyeFocusViaHandler:" : "DS 2/3/2016 16:45",
 		"initialize" : "DS 2/15/2016 14:43",
-		"keepFocusOnCmdKeyPref" : "DS 2/15/2016 12:03",
+		"keepFocusOnCmdKeyPref" : "DS 2/15/2016 15:07",
 		"keepFocusOnCmdKeyPref:" : "DS 2/3/2016 19:05",
-		"keyboardFocusOnEyeEnter" : "DS 2/15/2016 11:51",
+		"keyboardFocusOnEyeEnter" : "DS 2/15/2016 15:09",
 		"keyboardFocusOnEyeEnter:" : "DS 2/3/2016 16:33",
 		"open" : "DS 2/15/2016 14:42",
 		"registerInWorldMenu" : "DS 2/15/2016 14:45" },
