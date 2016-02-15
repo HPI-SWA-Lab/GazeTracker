@@ -5,7 +5,7 @@ Gaze tracking is typically used to gather information on a users point of view a
 
 The project was started by [Daniel Stolpe](https://github.com/numberpi) and [Astrid Thomschke](github.com/athomschke) during the Programming Languages, Concepts, Tools and Environments (PLCTE) in the winter semester of 2015/2016, supervised by [Marcel Taeumel](https://github.com/marceltaeumel).
 
-## Setup instructions
+## Setting up GazeTracker
 In order to have gaze coordinates information available in a Squeak image, we write information from a Tobii EyeX gaze tracker to stdout. This output is then piped into a process running a Squeak image.
 
 The setup requires on the hardware side
@@ -25,8 +25,19 @@ On the software side the setup requires
 
 Tobii is set up at this point. You can try the gaze tracker in your Windows environment.
 
-### Prepare Squeak image
+### Start Squeak with gaze tracking information
+We provide a Windows executable that allows writing screen coordinates from TobiiEyeX to stdout. If you want to make changes to this output format, you'll find instructions [later in this document](https://github.com/HPI-SWA-Lab/GazeTracker/blob/master/README.md#making-changes-to-the-exchange-format-between-tobii-eyex-and-squeak).
+
 * If you don't have one, download a Squeak image from http://squeak.org/downloads/
+* Start your squeak image from command line using the gazetracking information
+ * The pre-compiled executable can be found under /GazeCorrdinatesToCommandLine/GazeCorrdinatesToCommandLine.exe (TODO: correct name and location!)
+
+TODO: correct command!
+``` shell
+[GazeCorrdinatesToCommandLineExecutable.exe] >> [YourSqueakImage.exe]
+```
+
+### Use gaze tracking information in Squeak
 * In a Squeak workspace, run
 ```smalltalk
 Metacello new
@@ -34,19 +45,14 @@ Metacello new
   repository: 'github://HPI-SWA-LAB/GazeTracker/repository';
   load.
 ```
-* TODO: in between steps
+* Left-click into the world and choose "Start gaze tracking".
 * Save the Image and close it.
-
-### Start gaze tracking in squeak
-We provide a Windows executable that allows writing screen coordinates from TobiiEyeX to stdout. If you want to make changes to this output format, have a look at section "Changing the exchange format between Tobii EyeX and Squeak"
-TODO: naming coorrect! The pre-compiled executable can be found under /GazeCorrdinatesToCommandLine/GazeCorrdinatesToCommandLine.exe
-
-TODO: correct command! Start your squeak image with [GazeCorrdinatesToCommandLineExecutable.exe] >> [YourSqueakImage.exe]
 
 ## Making changes to the exchange format between Tobii EyeX and Squeak
 If you want to make changes to the way this project writes gaze coordinates to the stout, follow these instructions.
-* Download and install the Tobii EyeX SDK for C and C++: http://developer.tobii.com/eyex-sdk/c-cplusplus/
-TODO: Put in subfolder of this repo
+* Download and install the Tobii EyeX SDK for C and C++: http://developer.tobii.com/eyex-sdk/c-cplusplus/ (TODO: Put in subfolder of this repo)
+
+TODO: Add compiling instructions and relevant files
 
 ## Linklist
 * Tobii
