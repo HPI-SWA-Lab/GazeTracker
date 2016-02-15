@@ -35,7 +35,7 @@ We provide an adapter as Windows executable that allows writing screen coordinat
  * An example batch file can be found at [GazeTracker repository]\tobii-adapter\startSqueakWithTobii-template.bat
 
 ``` shell
-Tobii2SqueakAdapter.exe | [path to Squeak execuatble]\SqueakConsole.exe [path to Squeak image]\[Squeak Image Name].exe 
+[path to tobii adapter]\Tobii2SqueakAdapter.exe | [path to Squeak execuatble]\SqueakConsole.exe [path to Squeak image]\[Squeak Image Name].exe 
 ```
 
 ### Use gaze tracking information in Squeak
