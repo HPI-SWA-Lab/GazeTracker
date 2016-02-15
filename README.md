@@ -34,7 +34,7 @@ We provide an adapter as Windows executable that allows writing screen coordinat
  * The pre-compiled executable can be found under /GazeCorrdinatesToCommandLine/GazeCorrdinatesToCommandLine.exe (TODO: correct name and location!)
  * An example batch file can be found at [[GazeTracker repository]\tobii-adapter\startSqueakWithTobii-template.bat](https://github.com/HPI-SWA-Lab/GazeTracker/tree/master/tobii-adapter/startSqueakWithTobii-template.bat)
 ``` shell
-[PathToYourTobii2SqueakAdapter] | [PathToYourSqueakExecutable] [PathToYourSqueakImage]
+[PathToYourTobii2SqueakAdapter] | [PathToYourSqueakConsoleExecutable] [PathToYourSqueakImage]
 ```
 
 ### Use gaze tracking information in Squeak
@@ -45,7 +45,11 @@ Metacello new
   repository: 'github://HPI-SWA-LAB/GazeTracker/repository';
   load.
 ```
-* Left-click into the world and choose "Start gaze tracking".
+* Left-click into the world and choose "open > GazeTracker".
+ * A button labelled "Start/Stop process" will be put in your world.
+ * Click this button to toggle between the two states
+  * When gaze tracking is enabled and Tobii is running, the focus for Squeak text fields will be set to your current gaze point
+  * When Tobii is not running or it cannot find your gaze, the Squeak image will stall until you're back in Tobii's view
 * Save the Image and close it.
 
 ## Making changes to the TobiiEyeX Adapter
