@@ -29,9 +29,8 @@ Tobii is set up at this point. You can try the gaze tracker in your Windows envi
 We provide an adapter as Windows executable that allows writing screen coordinates from TobiiEyeX to stdout. If you want to make changes to this output format, you'll find instructions [later in this document](https://github.com/HPI-SWA-Lab/GazeTracker/blob/master/README.md#making-changes-to-the-exchange-format-between-tobii-eyex-and-squeak).
 
 * If you don't have a Squeak environment, download a Squeak executable and image from http://squeak.org/downloads/
-* In https://github.com/HPI-SWA-Lab/GazeTracker/tobii-adapter/ , copy Tobii.EyeX.Client-template-x32.dll or Tobii.EyeX.Client-template-x64.dll (depending on your system) and rename it to Tobii.EyeX.Client.dll. The sources for these libraries can be found in the [TobiiEyeX SDK for C and C++](http://developer.tobii.com/eyex-sdk/c-cplusplus/)
 * Start your squeak image from command line with the adapter
- * The pre-compiled executable can be found under [[GazeTracker repository]\tobii-adapter\Tobii2SqueakAdapter.exe](https://github.com/HPI-SWA-Lab/GazeTracker/blob/master/tobii-adapter/Tobii2SqueakAdapter.exe)
+ * The pre-compiled executable can be found under [[GazeTracker repository]\tobii-adapter\Tobii2SqueakAdapter.exe](https://github.com/HPI-SWA-Lab/GazeTracker/blob/master/tobii-adapter/Tobii2SqueakAdapter.exe). If you move it somewhere else, make sure to also move the Tobii.EyeX.Client.dll to the same location.
  * An example batch file can be found at [[GazeTracker repository]\tobii-adapter\startSqueakWithTobii-template.bat](https://github.com/HPI-SWA-Lab/GazeTracker/tree/master/tobii-adapter/startSqueakWithTobii-template.bat)
  * Use following shell command (according to your environment)
 ``` shell
