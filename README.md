@@ -51,7 +51,7 @@ Metacello new
  * Click this button to toggle between the two states
   * When gaze tracking is enabled and Tobii is running, the focus for Squeak text fields will be set to your current gaze point
   * When Tobii is not running or it cannot find your gaze, the Squeak image will stall until you're back in Tobii's view
-* Save the Image and close it.
+* Configure gaze control in Squeak under Tools > Preferences > Gaze Tracker
 
 ## Making changes to the TobiiEyeX Adapter
 If you want to make changes adapter, e.g. to change the way this project writes gaze coordinates to the stout, follow these instructions.
