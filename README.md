@@ -7,6 +7,10 @@ The project was started by [Daniel Stolpe](https://github.com/numberpi) and [Ast
 
 View the Squeak Gaze Tracker screencast at https://youtu.be/SNm0B0PTYQI
 
+Get more information from presentations:
+* [Frist prototype](https://docs.google.com/presentation/d/1-nI-6TA-7604qfjvKDztZV-Iyn9WVMYFZw6DR6xvjeY/edit?usp=sharing)
+* [Final state (for now)](https://docs.google.com/presentation/d/17QsNCRyb0Y6qT02to8RwM-eY7PlWv37mVEKUq0oiiHg/edit?usp=sharing)
+
 ## Setting up GazeTracker
 In order to have gaze coordinates information available in a Squeak image, we write information from a Tobii EyeX gaze tracker to stdout. This output is then piped into a process running a Squeak image.
 
