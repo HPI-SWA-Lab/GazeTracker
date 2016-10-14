@@ -1,0 +1,14 @@
+{
+	"category" : "EyeTracker",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fixationPoint" ],
+	"name" : "EyeTrackerFixationDeltaEvent",
+	"pools" : [
+		 ],
+	"super" : "EyeTrackerEvent",
+	"type" : "normal" }

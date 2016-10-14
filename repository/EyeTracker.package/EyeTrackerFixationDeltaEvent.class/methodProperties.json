@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"=" : "mt 10/13/2016 14:31",
+		"fixationPoint" : "mt 10/13/2016 14:11",
+		"hash" : "mt 10/13/2016 14:30",
+		"isFixation" : "mt 10/13/2016 14:15",
+		"isFixationDelta" : "mt 10/13/2016 13:36",
+		"printOn:" : "DS 10/13/2016 16:22",
+		"setType:position:mode:fixationPoint:buttons:hand:stamp:" : "mt 10/13/2016 13:41",
+		"storeOn:" : "mt 10/13/2016 14:11",
+		"type:readFrom:" : "mt 10/13/2016 14:13" } }

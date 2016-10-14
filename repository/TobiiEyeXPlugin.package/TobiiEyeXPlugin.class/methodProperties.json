@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"hasHeaderFile" : "mt 5/3/2016 16:39",
+		"moduleName" : "DS 9/29/2016 15:09",
+		"requiresPlatformFiles" : "DS 9/29/2016 17:14",
+		"unloadModule" : "DS 10/10/2016 14:10" },
+	"instance" : {
+		"initialiseModule" : "DS 9/29/2016 17:21",
+		"primitiveGetFixationData" : "DS 10/13/2016 15:49",
+		"shutdownModule" : "DS 9/29/2016 17:20" } }

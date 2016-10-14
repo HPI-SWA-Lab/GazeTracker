@@ -1,0 +1,14 @@
+{
+	"category" : "EyeTracker-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TobiEyeXTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

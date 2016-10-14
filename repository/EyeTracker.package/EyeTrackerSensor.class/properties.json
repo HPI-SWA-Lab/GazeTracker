@@ -1,0 +1,14 @@
+{
+	"category" : "EyeTracker",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Engine" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "EyeTrackerSensor",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

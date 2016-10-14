@@ -1,0 +1,4 @@
+testing
+isEventTypeEnd
+
+	^ eventType = FixationDataEventTypeEnd

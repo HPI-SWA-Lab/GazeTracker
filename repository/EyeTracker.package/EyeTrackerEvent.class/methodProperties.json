@@ -1,0 +1,21 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"=" : "mt 10/13/2016 14:28",
+		"hash" : "mt 10/13/2016 14:28",
+		"isEventTypeBegin" : "DS 10/10/2016 13:52",
+		"isEventTypeData" : "DS 10/10/2016 13:52",
+		"isEventTypeEnd" : "DS 10/10/2016 13:52",
+		"isEyeTracker" : "mt 10/13/2016 13:34",
+		"isFixation" : "mt 10/13/2016 14:14",
+		"isFixationDelta" : "mt 10/13/2016 13:36",
+		"isGaze" : "mt 10/13/2016 14:15",
+		"isValid" : "DS 10/13/2016 12:54",
+		"mode" : "mt 10/13/2016 14:12",
+		"mode:" : "DS 10/13/2016 13:25",
+		"printOn:" : "DS 10/13/2016 16:21",
+		"sentTo:" : "DS 10/13/2016 18:01",
+		"setType:position:mode:buttons:hand:stamp:" : "mt 10/13/2016 13:39",
+		"storeOn:" : "mt 10/13/2016 14:02",
+		"type:readFrom:" : "mt 10/13/2016 14:10" } }

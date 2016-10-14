@@ -1,0 +1,14 @@
+{
+	"category" : "EyeTracker",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mode" ],
+	"name" : "EyeTrackerEvent",
+	"pools" : [
+		 ],
+	"super" : "UserInputEvent",
+	"type" : "normal" }

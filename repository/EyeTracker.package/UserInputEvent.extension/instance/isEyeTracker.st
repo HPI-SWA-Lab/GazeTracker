@@ -1,0 +1,3 @@
+*EyeTracker
+isEyeTracker
+	^ false

@@ -1,0 +1,14 @@
+{
+	"category" : "EyeTracker",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TobiiEyeX",
+	"pools" : [
+		"TobiiEyeXConstants" ],
+	"super" : "Object",
+	"type" : "normal" }

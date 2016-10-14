@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"eyeTracked:fromMorph:" : "mt 10/13/2016 14:41",
+		"handlesEyeTracker:" : "mt 10/13/2016 14:38",
+		"on:send:to:" : "mt 10/13/2016 14:39",
+		"printOn:" : "mt 10/13/2016 14:38" } }

@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"fixationDataModeFrom:" : "DS 10/13/2016 16:05",
+		"generateEyeTrackerEvent:" : "DS 10/13/2016 17:05",
+		"generateEyeTrackerFixationDeltaEvent:" : "DS 10/14/2016 13:41",
+		"handleEvent:" : "DS 10/14/2016 13:03",
+		"lastEyeTrackerEvent" : "mt 10/13/2016 14:23",
+		"processEvents" : "DS 10/13/2016 17:42",
+		"processEyeTrackerEvents" : "DS 10/14/2016 14:51" } }

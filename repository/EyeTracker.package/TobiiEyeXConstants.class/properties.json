@@ -1,0 +1,18 @@
+{
+	"category" : "EyeTracker",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"FixationDataEventTypeBegin",
+		"FixationDataEventTypeData",
+		"FixationDataEventTypeEnd",
+		"FixationDataModeSensitive",
+		"FixationDataModeSlow" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TobiiEyeXConstants",
+	"pools" : [
+		 ],
+	"super" : "SharedPool",
+	"type" : "normal" }

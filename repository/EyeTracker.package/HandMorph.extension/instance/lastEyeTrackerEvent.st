@@ -1,0 +1,3 @@
+*EyeTracker
+lastEyeTrackerEvent
+	^ eyeTrackerState lastEyeTrackerEvent

@@ -1,0 +1,16 @@
+{
+	"category" : "EyeTracker-Sample",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"positions",
+		"form",
+		"fixationPoints" ],
+	"name" : "EyeTrackerSampleMorph",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

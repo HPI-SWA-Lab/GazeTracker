@@ -1,0 +1,4 @@
+testing
+isEventTypeData
+
+	^ eventType = FixationDataEventTypeData

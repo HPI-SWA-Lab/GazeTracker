@@ -1,0 +1,14 @@
+{
+	"category" : "TobiiEyeXPlugin",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 5/4/2016 14:24",
+	"instvars" : [
+		 ],
+	"name" : "TobiiEyeXPlugin",
+	"pools" : [
+		 ],
+	"super" : "InterpreterPlugin",
+	"type" : "normal" }
