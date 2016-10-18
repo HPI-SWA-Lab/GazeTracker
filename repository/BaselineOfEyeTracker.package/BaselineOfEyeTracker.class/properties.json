@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfEyeTracker",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfEyeTracker",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
