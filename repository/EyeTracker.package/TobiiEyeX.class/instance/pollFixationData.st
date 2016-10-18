@@ -6,6 +6,11 @@ pollFixationData
 	
 	self flag: #todo. "handle result error codes"
 	result ifNil: [^ fixationDataTransfer].
-	result > 0 ifTrue: [self error: 'EyeTracker error ' , result].
+	result = GazeNotTracked ifTrue: [^ fixationDataTransfer].
+	result = PrimErrBadArgument ifTrue: ["TODO"].
+	result = PrimErrBadNumArgs ifTrue: ["TODO"].
+	
+	result > 0 ifTrue: [
+		Transcript showln: 'EyeTracker error code: ' , result].
 	
 	^ fixationDataTransfer

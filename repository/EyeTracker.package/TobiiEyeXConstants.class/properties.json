@@ -7,7 +7,8 @@
 		"FixationDataEventTypeData",
 		"FixationDataEventTypeEnd",
 		"FixationDataModeSensitive",
-		"FixationDataModeSlow" ],
+		"FixationDataModeSlow",
+		"GazeNotTracked" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],

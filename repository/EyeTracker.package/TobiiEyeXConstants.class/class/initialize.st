@@ -7,5 +7,7 @@ initialize
 	
 	FixationDataModeSensitive := 1.
 	FixationDataModeSlow := 2.
+	
+	GazeNotTracked := 1.
 
 	
