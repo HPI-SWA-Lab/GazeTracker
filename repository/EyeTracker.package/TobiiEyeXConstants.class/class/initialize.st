@@ -9,5 +9,8 @@ initialize
 	FixationDataModeSlow := 2.
 	
 	GazeNotTracked := 1.
-
+	
+	"VMBasicConstants"
+	PrimErrBadArgument := 3.
+	PrimErrBadNumArgs := 5.
 	

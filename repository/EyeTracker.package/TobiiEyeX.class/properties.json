@@ -9,7 +9,6 @@
 		 ],
 	"name" : "TobiiEyeX",
 	"pools" : [
-		"TobiiEyeXConstants",
-		"VMBasicConstants" ],
+		"TobiiEyeXConstants" ],
 	"super" : "Object",
 	"type" : "normal" }

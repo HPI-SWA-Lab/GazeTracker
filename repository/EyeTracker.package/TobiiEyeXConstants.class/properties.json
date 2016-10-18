@@ -8,7 +8,9 @@
 		"FixationDataEventTypeEnd",
 		"FixationDataModeSensitive",
 		"FixationDataModeSlow",
-		"GazeNotTracked" ],
+		"GazeNotTracked",
+		"PrimErrBadArgument",
+		"PrimErrBadNumArgs" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
