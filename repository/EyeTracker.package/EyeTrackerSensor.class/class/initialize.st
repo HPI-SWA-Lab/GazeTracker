@@ -1,0 +1,17 @@
+class initialization
+initialize
+	super initialize.
+	
+	"We need to add an instance var eyeTrackerState"
+	Morph subclass: #HandMorph
+		instanceVariableNames: 'mouseFocus keyboardFocus eventListeners mouseListeners keyboardListeners eventCaptureFilters mouseCaptureFilters keyboardCaptureFilters mouseClickState mouseOverHandler mouseWheelState eyeTrackerState lastMouseEvent targetOffset damageRecorder cacheCanvas cachedCanvasHasHoles temporaryCursor temporaryCursorOffset hardwareCursor hasChanged savedPatch userInitials lastEventBuffer genieGestureProcessor keyboardInterpreter'
+		classVariableNames: 'CompositionWindowManager DoubleClickTime DragThreshold EventStats NewEventRules NormalCursor PasteBuffer SendMouseWheelToKeyboardFocus ShowEvents SynthesizeMouseWheelEvents'
+		poolDictionaries: 'EventSensorConstants TobiiEyeXConstants'
+		category: 'Morphic-Kernel'.
+	
+	"We need to add instance vars eyeTrackerRecipient and eyeTrackerSelector"
+	Object subclass: #EventHandler
+		instanceVariableNames: 'mouseDownRecipient mouseDownSelector mouseMoveRecipient mouseMoveSelector mouseStillDownRecipient mouseStillDownSelector mouseUpRecipient mouseUpSelector mouseEnterRecipient mouseEnterSelector mouseLeaveRecipient mouseLeaveSelector mouseEnterDraggingRecipient mouseEnterDraggingSelector mouseLeaveDraggingRecipient mouseLeaveDraggingSelector mouseWheelRecipient mouseWheelSelector eyeTrackerRecipient eyeTrackerSelector keyStrokeRecipient keyStrokeSelector keyUpRecipient keyUpSelector keyDownRecipient keyDownSelector valueParameter startDragRecipient startDragSelector doubleClickSelector doubleClickRecipient doubleClickTimeoutSelector doubleClickTimeoutRecipient clickSelector clickRecipient keyboardFocusChangeRecipient keyboardFocusChangeSelector wantsEveryMouseMove'
+		classVariableNames: ''
+		poolDictionaries: ''
+		category: 'Morphic-Events'
