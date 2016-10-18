@@ -11,8 +11,9 @@ Get more information from presentations:
 * [Frist prototype](https://docs.google.com/presentation/d/1-nI-6TA-7604qfjvKDztZV-Iyn9WVMYFZw6DR6xvjeY/edit?usp=sharing)
 * [Final state (for now)](https://docs.google.com/presentation/d/17QsNCRyb0Y6qT02to8RwM-eY7PlWv37mVEKUq0oiiHg/edit?usp=sharing)
 
+In 2016 we built a VM-Plugin to transfer the gaze data from the EyeX engine into Squeak to replace the dirty stdin-stdout-pipe hack.
+
 ## Setting up GazeTracker
-In order to have gaze coordinates information available in a Squeak image, we write information from a Tobii EyeX gaze tracker to stdout. This output is then piped into a process running a Squeak image.
 
 The setup requires on the hardware side
 * A Tobii EyeX
@@ -31,43 +32,29 @@ On the software side the setup requires
 
 Tobii is set up at this point. You can try the gaze tracker in your Windows environment.
 
-### Start Squeak with gaze tracking information
-We provide an adapter as Windows executable that allows writing screen coordinates from TobiiEyeX to stdout. If you want to make changes to this output format, you'll find instructions [later in this document](https://github.com/HPI-SWA-Lab/GazeTracker/blob/master/README.md#making-changes-to-the-exchange-format-between-tobii-eyex-and-squeak).
+### Building the VM-Plugin
+It requires Visual Studio to be installed on your machine.
+- Download the EyeX SDK for C/C++ from [developer.tobii.com](http://developer.tobii.com/downloads). 
+- Extract the EyeX SDK files and copy the lib and include directories to the
+  `plugin-code\thirdparty\TobiiEyeX-SDK` folder of the EyeX plugin. (Note that the SDK license differs from the one used for this plugin.)
+- Build the Visual Studio project in `plugin-code\TobiiEyeXPlugin`
 
-* If you don't have a Squeak environment, download a Squeak executable and image from http://squeak.org/downloads/
-* Start your squeak image from command line with the adapter
- * The pre-compiled executable can be found under [[GazeTracker repository]\tobii-adapter\Tobii2SqueakAdapter.exe](https://github.com/HPI-SWA-Lab/GazeTracker/blob/master/tobii-adapter/Tobii2SqueakAdapter.exe). If you move it somewhere else, make sure to also move the Tobii.EyeX.Client.dll to the same location.
- * An example batch file can be found at [[GazeTracker repository]\tobii-adapter\startSqueakWithTobii-template.bat](https://github.com/HPI-SWA-Lab/GazeTracker/tree/master/tobii-adapter/startSqueakWithTobii-template.bat)
- * Use following shell command (according to your environment)
-``` shell
-[PathToYourTobii2SqueakAdapter] | [PathToYourSqueakConsoleExecutable] [PathToYourSqueakImage]
-```
+### Running Squeak with the EyeTracking plugin
+- Copy the build output `TobiiEyeX.dll` to your Squeak VM folder (the folder where Squeak.exe is located).
+- Copy the third-party `Tobii.EyeX.Client.dll` from the EyeX SDK lib folder also into your Squeak VM folder
+- run Squeak
 
 ### Use gaze tracking information in Squeak
 * In a Squeak workspace, run
 ```smalltalk
 Metacello new
-  baseline: 'GazeTracker';
+  baseline: 'EyeTracker';
   repository: 'github://HPI-SWA-LAB/GazeTracker/repository';
   load.
 ```
-* Left-click into the world and choose "open > GazeTracker".
- * A button labelled "Start/Stop process" will be put in your world.
- * Click this button to toggle between the two states
-  * When gaze tracking is enabled and Tobii is running, the focus for Squeak text fields will be set to your current gaze point
-  * When Tobii is not running or it cannot find your gaze, the Squeak image will stall until you're back in Tobii's view
-* Configure gaze control in Squeak under Tools > Preferences > Gaze Tracker
 
-## Making changes to the TobiiEyeX Adapter
-If you want to make changes adapter, e.g. to change the way this project writes gaze coordinates to the stout, follow these instructions.
-
-It requires Visual Studio to be installed on your machine.
-
-* Download and install the Tobii EyeX SDK for C and C++: http://developer.tobii.com/eyex-sdk/c-cplusplus/
-* Apply the changes made for the adapter to the downloaded sources.
- * The changed files can be found in [[GazeTracker repository]\tobii-adapter-source](https://github.com/HPI-SWA-Lab/GazeTracker/tree/master/tobii-adapter-source)
-* Make your changes
-* Export a Windows executable
+### Changing the Slang code
+tbd
 
 ## Linklist
 * GazeTracking for Squeak
