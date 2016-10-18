@@ -5,14 +5,10 @@ baseline: spec
 		for: #common
 		do: [
 			spec
-				package: 'EyeTracker' with: [
-					spec
-						repository: 'github://HPI-SWA-Lab/GazeTracker:master/repository'];	
-									
-				package: 'TobiiEyeXPlugin' with: [
-					spec
-						repository: 'github://HPI-SWA-Lab/GazeTracker:master/repository'].
+				package: 'EyeTracker';										
+				package: 'TobiiEyeXPlugin'.
 					
 			spec
 				group: 'default' with: #('EyeTracker');
-				group: 'Plugin' with: #('TobiiEyeXPlugin')]
+				group: 'plugin' with: #('TobiiEyeXPlugin');
+				group: 'all' with: #('TobiiEyeXPlugin' 'EyeTracker')]
