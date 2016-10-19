@@ -14,3 +14,5 @@ initialize
 	PrimErrBadArgument := 3.
 	PrimErrBadNumArgs := 5.
 	
+	"Need to recompile some methods to have the right literal bindings from pool variables defined above"
+	HandMorph compileAll.

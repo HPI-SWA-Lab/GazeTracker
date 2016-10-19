@@ -1,0 +1,4 @@
+*EyeTracker
+handlesEyeTracker: evt
+
+	^ true
