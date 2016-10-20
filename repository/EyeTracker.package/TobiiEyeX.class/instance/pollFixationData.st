@@ -1,4 +1,4 @@
-as yet unclassified
+data polling
 pollFixationData
 	| fixationDataTransfer result |
 	fixationDataTransfer := (Array new: 7).

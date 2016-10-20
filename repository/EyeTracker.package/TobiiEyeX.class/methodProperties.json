@@ -2,5 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"beFixationDataModeSensitive" : "DS 10/20/2016 15:43",
+		"beFixationDataModeSlow" : "DS 10/20/2016 15:44",
+		"fixationDataMode:" : "DS 10/20/2016 15:55",
 		"pollFixationData" : "DS 10/17/2016 13:01",
-		"primGetFixationData:" : "DS 10/13/2016 17:04" } }
+		"primGetFixationData:" : "DS 10/20/2016 15:38",
+		"primSetFixationDataMode:" : "DS 10/20/2016 16:38" } }

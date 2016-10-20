@@ -44,6 +44,8 @@ static const TX_STRING InteractorId = "Squeak";
 // global variables
 static TX_HANDLE g_hGlobalInteractorSnapshot = TX_EMPTY_HANDLE;
 static TX_CONTEXTHANDLE g_hContext = TX_EMPTY_HANDLE;
+static TX_HANDLE g_hFixInteractor = TX_EMPTY_HANDLE;
+static TX_HANDLE g_hFixBehavior = TX_EMPTY_HANDLE;
 static TX_GAZETRACKING g_gazeTrackedStatus;
 static TX_FIXATIONDATAEVENTPARAMS g_fixationDataBeginEventParams;
 static TX_FIXATIONDATAEVENTPARAMS g_fixationDataEventParams;
@@ -56,8 +58,6 @@ static CRITICAL_SECTION CriticalSectionGaze;
  */
 BOOL InitializeGlobalInteractorSnapshot(TX_CONTEXTHANDLE hContext)
 {
-	TX_HANDLE hFixInteractor = TX_EMPTY_HANDLE;
-	TX_HANDLE hFixBehavior = TX_EMPTY_HANDLE;
 	//TX_GAZEPOINTDATAPARAMS params = { TX_GAZEPOINTDATAMODE_LIGHTLYFILTERED };
 	//TX_FIXATIONDATAPARAMS fixParams = { TX_FIXATIONDATAMODE_SENSITIVE };
 	TX_FIXATIONDATAPARAMS fixParams = { TX_FIXATIONDATAMODE_SLOW };
@@ -67,12 +67,9 @@ BOOL InitializeGlobalInteractorSnapshot(TX_CONTEXTHANDLE hContext)
 		hContext,
 		InteractorId,
 		&g_hGlobalInteractorSnapshot,
-		&hFixInteractor) == TX_RESULT_OK;
-	success &= txCreateInteractorBehavior(hFixInteractor, &hFixBehavior, TX_BEHAVIORTYPE_FIXATIONDATA) == TX_RESULT_OK;
-	success &= txSetFixationDataBehaviorParams(hFixBehavior, &fixParams) == TX_RESULT_OK;
-
-	txReleaseObject(&hFixBehavior);
-	txReleaseObject(&hFixInteractor);
+		&g_hFixInteractor) == TX_RESULT_OK;
+	success &= txCreateInteractorBehavior(g_hFixInteractor, &g_hFixBehavior, TX_BEHAVIORTYPE_FIXATIONDATA) == TX_RESULT_OK;
+	success &= txSetFixationDataBehaviorParams(g_hFixBehavior, &fixParams) == TX_RESULT_OK;
 
 	return success;
 }
@@ -276,6 +273,9 @@ sqInt eyeShutdown(void) {
 	// disable and delete the context.
 	txDisableConnection(g_hContext);
 	txReleaseObject(&g_hGlobalInteractorSnapshot);
+	txReleaseObject(&g_hFixBehavior);
+	txReleaseObject(&g_hFixInteractor);
+
 	success = txShutdownContext(g_hContext, TX_CLEANUPTIMEOUT_DEFAULT, TX_FALSE) == TX_RESULT_OK;
 	success &= txReleaseContext(&g_hContext) == TX_RESULT_OK;
 	success &= txUninitializeEyeX() == TX_RESULT_OK;
@@ -313,4 +313,19 @@ int eyeGetFixationData(double* transferArray) {
 	transferArray[6] = fixationDataEventParams.Y;
 
 	return EYE_GAZETRACKED;
+}
+
+int eyeSetFixationDataMode(int mode) {
+	TX_FIXATIONDATAMODE txMode =
+		mode == EYE_FIXATIONDATAMODE_SENSITIVE
+			? TX_FIXATIONDATAMODE_SENSITIVE
+			: TX_FIXATIONDATAMODE_SLOW;
+	TX_FIXATIONDATAPARAMS fixParams = { txMode };
+	BOOL success;
+
+	txDisableConnection(g_hContext);
+	success &= txSetFixationDataBehaviorParams(g_hFixBehavior, &fixParams) == TX_RESULT_OK;
+	success &= txEnableConnection(g_hContext) == TX_RESULT_OK;
+
+	return success;
 }

@@ -1,8 +1,11 @@
 *EyeTracker
 eyeTracked: evt
 	
+	| fixationPoints |
 	evt isFixation ifFalse: [^ self].
-	
+	fixationPoints := evt mode = #sensitive
+		ifTrue: [fixationPointsSensitive]
+		ifFalse: [fixationPointsSlow].
 	evt isFixationDelta
 		ifTrue: [
 			fixationPoints ifEmpty: [

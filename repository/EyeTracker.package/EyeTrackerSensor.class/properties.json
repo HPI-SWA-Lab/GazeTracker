@@ -3,7 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"Engine" ],
+		"Engine",
+		"EyeTrackerFixationDataModeSensitive" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],

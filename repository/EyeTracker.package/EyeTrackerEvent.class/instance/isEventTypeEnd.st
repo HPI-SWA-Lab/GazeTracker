@@ -1,4 +1,0 @@
-testing
-isEventTypeEnd
-
-	^ eventType = FixationDataEventTypeEnd

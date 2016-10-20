@@ -7,4 +7,5 @@
 	"instance" : {
 		"initialiseModule" : "DS 9/29/2016 17:21",
 		"primitiveGetFixationData" : "DS 10/14/2016 15:39",
+		"primitiveSetFixationDataMode" : "DS 10/20/2016 16:38",
 		"shutdownModule" : "DS 9/29/2016 17:20" } }

@@ -8,7 +8,8 @@
 	"instvars" : [
 		"positions",
 		"form",
-		"fixationPoints" ],
+		"fixationPointsSlow",
+		"fixationPointsSensitive" ],
 	"name" : "EyeTrackerSampleMorph",
 	"pools" : [
 		 ],

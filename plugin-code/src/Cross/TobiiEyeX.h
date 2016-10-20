@@ -13,14 +13,20 @@
 
 #define TOBII_EYEX_PLUGIN_VERSION 1
 
- typedef enum {
+typedef enum {
 	EYE_GAZETRACKED = 0,
-    EYE_GAZENOTTRACKED
+	EYE_GAZENOTTRACKED
 } EYE_TRACKING_STATUS_CODES;
+
+typedef enum {
+	EYE_FIXATIONDATAMODE_SENSITIVE = 1,
+	EYE_FIXATIONDATAMODE_SLOW
+} EYE_FIXATION_DATA_MODE;
 
 int eyeInit(void);
 int eyeShutdown(void);
 
 int eyeGetFixationData(double*);
+int eyeSetFixationDataMode(int);
 
 #endif

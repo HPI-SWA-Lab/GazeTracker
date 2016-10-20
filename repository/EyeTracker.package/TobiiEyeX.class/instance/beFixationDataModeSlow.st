@@ -1,0 +1,4 @@
+configuration
+beFixationDataModeSlow
+
+	self fixationDataMode: FixationDataModeSlow.
