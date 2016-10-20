@@ -59,16 +59,12 @@ EyeTrackerSampleMorph open
 ```
 
 ### Changing the Slang code
-tbd
-
-## Linklist
-* GazeTracking for Squeak
-  * Github repository of this projects work: https://github.com/HPI-SWA-Lab/GazeTracker/
-  * Required Squeak package: [[GazeTracker repository]\repository](https://github.com/HPI-SWA-Lab/GazeTracker/tree/master/repository)
-  * Tobii adapter: [[GazeTracker repository]\tobii-adapter](https://github.com/HPI-SWA-Lab/GazeTracker/tree/master/tobii-adapter)
-  * Tobii EyeX SDK changes: [[GazeTracker repository]\tobii-adapter-source](https://github.com/HPI-SWA-Lab/GazeTracker/tree/master/tobii-adapter-source)
-* Tobii
-  * TobiiEyeX Drivers: http://developer.tobii.com/eyex-setup/
-  * TobiiEyeX SDK for C and C++: http://developer.tobii.com/eyex-sdk/c-cplusplus/
-* Squeak
-  * Squeak images: http://squeak.org/downloads/
+* If you want to change the Slang code, you need the VMMaker to translate the code to C.
+```smalltalk
+MCHttpRepository
+  location: 'http://source.squeak.org/VMMaker'
+  user: 'squeak'
+  password: 'squeak'
+```
+* Load the newest version of VMMaker.oscog
+* For more information about the VMMaker see [Squeak wiki](http://wiki.squeak.org/squeak/2105)
