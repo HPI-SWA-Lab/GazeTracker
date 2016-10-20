@@ -52,6 +52,11 @@ Metacello new
   repository: 'github://HPI-SWA-LAB/GazeTracker/repository';
   load.
 ```
+* Activate full screen mode in Squeak
+* Open a sample Morph using gaze information
+```smalltalk
+EyeTrackerSampleMorph open
+```
 
 ### Changing the Slang code
 tbd
