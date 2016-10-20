@@ -32,15 +32,18 @@ On the software side the setup requires
 
 Tobii is set up at this point. You can try the gaze tracker in your Windows environment.
 
-### Building the VM-Plugin
+### Building the VM-Plugin (optional)
 It requires Visual Studio to be installed on your machine.
 - Download the EyeX SDK for C/C++ from [developer.tobii.com](http://developer.tobii.com/downloads). 
 - Extract the EyeX SDK files and copy the lib and include directories to the
   `plugin-code\thirdparty\TobiiEyeX-SDK` folder of the EyeX plugin. (Note that the SDK license differs from the one used for this plugin.)
 - Build the Visual Studio project in `plugin-code\TobiiEyeXPlugin`
 
+### VM-Plugin as binary
+If you do not want to build the plugin yourself, download the DLL from the latest [release](https://github.com/HPI-SWA-Lab/GazeTracker/releases).
+
 ### Running Squeak with the EyeTracking plugin
-- Copy the build output `TobiiEyeX.dll` to your Squeak VM folder (the folder where Squeak.exe is located).
+- Copy the build output (or downloaded) `TobiiEyeX.dll` to your Squeak VM folder (the folder where Squeak.exe is located).
 - Copy the third-party `Tobii.EyeX.Client.dll` from the EyeX SDK lib folder also into your Squeak VM folder
 - run Squeak
 
