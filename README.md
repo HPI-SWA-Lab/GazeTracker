@@ -63,11 +63,5 @@ EyeTrackerSampleMorph open
 
 ### Changing the Slang code
 * If you want to change the Slang code, you need the VMMaker to translate the code to C.
-```smalltalk
-MCHttpRepository
-  location: 'http://source.squeak.org/VMMaker'
-  user: 'squeak'
-  password: 'squeak'
-```
-* Load the newest version of VMMaker.oscog
+* An easy way to load all dependencies needed is running [this script](https://github.com/OpenSmalltalk/opensmalltalk-vm/blob/Cog/image/BuildSqueakSpurTrunkVMMakerImage.st) in Squeak
 * For more information about the VMMaker see [Squeak wiki](http://wiki.squeak.org/squeak/2105)
