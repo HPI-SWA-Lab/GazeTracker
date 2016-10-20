@@ -63,5 +63,6 @@ EyeTrackerSampleMorph open
 
 ### Changing the Slang code
 * If you want to change the Slang code, you need the VMMaker to translate the code to C.
-* An easy way to load all dependencies needed is running [this script](https://github.com/OpenSmalltalk/opensmalltalk-vm/blob/Cog/image/BuildSqueakSpurTrunkVMMakerImage.st) in Squeak
+* An easy way to load all dependencies needed is running parts of [this script](https://github.com/OpenSmalltalk/opensmalltalk-vm/blob/Cog/image/BuildSqueakSpurTrunkVMMakerImage.st) in Squeak (exclude the part where *.st files are filed in)
+* You need also to file in [this script](https://github.com/OpenSmalltalk/opensmalltalk-vm/blob/Cog/image/Object-performwithwithwithwithwith.st) and [that script](https://github.com/OpenSmalltalk/opensmalltalk-vm/blob/Cog/image/FT2Constants.st)
 * For more information about the VMMaker see [Squeak wiki](http://wiki.squeak.org/squeak/2105)
